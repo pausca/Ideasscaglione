@@ -1,0 +1,262 @@
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    font-size: border-box;
+}
+
+head{
+    background-color:black;
+}
+
+body{
+    text-align: center;
+    background-color:black;
+    height:100vh;
+}
+h1{
+    color:white
+}
+
+
+nav{
+    color: white
+}
+footer{
+    color:red
+}
+.animado{
+    animation-name: animado;
+animation-iteration-count:2;
+/*repeticion*/
+animation-duration:2s;
+}
+
+/*Animacion*/
+@keyframes animado{
+    from{
+        transform: translate(-200px);
+        opacity: 0;
+
+    }
+    /*inicio*/
+    to{
+        transform: translate(0);
+        opacity: 1;
+
+    }
+    /*final*/
+}
+
+/*Nombrar areas*/
+header{
+    grid-area: cabeza;
+    padding: 5px;
+}
+nav{
+    grid-area: menu;
+    padding: 5px;
+}
+section{
+    grid-area: imagenes;
+    padding: 5px;
+}
+div{
+    grid-area: subtitulo;
+    padding: 5px;
+}
+footer{
+    grid-area: pie;
+    padding: 5px;
+}
+
+span:hover{
+    background-color:white;
+    color:red
+}
+
+/*smartphone*/
+
+@media(max-width: 480px){
+    body{
+        height:100vh;
+    }
+
+    span:hover{
+        background-color:white;
+        color:red
+    }
+
+    .menuFlex{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .galeriaFlex{
+        display: flex;
+        flex-wrap:row nowrap;
+        padding: 2rem;
+        margin-left: 50px;
+    }
+
+    .imagen{
+        padding: 10px;
+        background-color: grey;
+        margin:1rem;
+}
+
+    .img{
+        padding: 10px;
+        background-color: grey;
+        margin: 3rem;
+    }
+
+    h2{
+        background-color: red;
+        color:antiquewhite
+    }
+
+    div h2{
+        padding: 2rem;
+    }
+
+    #gridAreas{
+        display: grid;
+
+        grid-template-areas:
+        "menu cebeza"
+        "menu subtitulo"
+        "menu imagene"
+        "pie pie";
+
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    grid: template columns 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    }
+}
+
+
+/*tablet*/
+@media(min-width:481px) and (max-width:1023px){
+    body{
+        height:100vh;
+    }
+
+    span:hover{
+        background-color:white;
+        color:red
+    }
+
+    .menuFlex{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .galeriaFlex{
+        display: flex;
+        flex-wrap:row nowrap;
+        padding: 2rem;
+        margin-left: 50px;
+    }
+
+    .imagen{
+        padding: 10px;
+        background-color: grey;
+        margin:1rem;
+}
+
+    .img{
+        padding: 10px;
+        background-color: grey;
+        margin: 3rem;
+    }
+
+    h2{
+        background-color: red;
+        color:antiquewhite
+    }
+
+    div h2{
+        padding: 2rem;
+    }
+
+    #gridAreas{
+        display: grid;
+
+        grid-template-areas:
+        "menu cebeza"
+        "menu subtitulo"
+        "menu imagene"
+        "pie pie";
+
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    grid: template columns 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    }
+
+}
+
+/*Desktop*/
+@media(min-width:1024px){
+    body{
+        height:100vh;
+    }
+
+    span:hover{
+        background-color:white;
+        color:red
+    }
+
+    .menuFlex{
+        display: flex;
+        flex-direction:column;
+    }
+
+    .galeriaFlex{
+        display: flex;
+        flex-wrap:row nowrap;
+        padding: 2rem;
+        margin-left: 50px;
+    }
+
+    .imagen{
+        padding: 10px;
+        background-color: grey;
+        margin:1rem;
+}
+
+    .img{
+        padding: 10px;
+        background-color: grey;
+        margin: 3rem;
+    }
+
+    h2{
+        background-color: red;
+        color:antiquewhite
+    }
+
+    div h2{
+        padding: 2rem;
+    }
+
+    #gridAreas{
+        display: grid;
+
+        grid-template-areas:
+        "menu cebeza"
+        "menu subtitulo"
+        "menu imagene"
+        "pie pie";
+
+    grid-template-rows: 2fr 2fr 1fr 2fr;
+    grid: template columns 100px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    }
+}
